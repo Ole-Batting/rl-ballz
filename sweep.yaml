@@ -1,0 +1,28 @@
+program: main.py
+name: "my-awesome-sweep"
+metric: 
+  name: "reward-sum"
+  goal: "maximize"
+method: "random"
+parameters: 
+  learning_rate:
+    distribution: "log_uniform"
+    min: -6
+    max: -2
+  gamma:
+    min: 0.8
+    max: 0.999
+  epsilon:
+    min: 0.1
+    max: 0.5
+  n_channels_cnn:
+    min: 1
+    max: 8
+  n_layers_cnn:
+    min: 1
+    max: 4
+  n_layers_fcn:
+    min: 1
+    max: 4
+  
+  
